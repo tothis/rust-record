@@ -1,0 +1,1 @@
+rust推荐使用蛇形命名法(snake case) 使用其它命名方式(如驼峰命名camel case)会显示警告
