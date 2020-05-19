@@ -1,0 +1,10 @@
+[package]
+name = "wasm-pack-test"
+version = "0.1.0"
+authors = ["李磊 <tothis@qq.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.62"
