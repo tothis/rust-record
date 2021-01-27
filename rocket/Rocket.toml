@@ -1,0 +1,13 @@
+# https://api.rocket.rs/v0.4/rocket/config/index.html
+
+# 开发环境
+[development]
+port = 8001
+
+# 测试环境
+[staging]
+port = 8002
+
+# 生产环境
+[production]
+port = 8003

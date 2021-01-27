@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>rocket-record</title>
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        body {
+            margin: 0;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 8rem;
+            letter-spacing: -0.3rem;
+            position: relative;
+        }
+
+        h1::before {
+            content: attr(data-spotlight);
+        }
+
+        h1::after {
+            content: attr(data-spotlight);
+            color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+            clip-path: ellipse(100px 100px at 0% 50%);
+            animation: spotlight 5s infinite;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+        }
+
+        @keyframes spotlight {
+            0% {
+                -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+                clip-path: ellipse(100px 100px at 0% 50%);
+            }
+
+            50% {
+                -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+                clip-path: ellipse(100px 100px at 100% 50%);
+            }
+
+            100% {
+                -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+                clip-path: ellipse(100px 100px at 0% 50%);
+            }
+        }
+    </style>
+</head>
+<body>
+<h1 data-spotlight="-> Rocket <-"></h1>
+</body>
+</html>
