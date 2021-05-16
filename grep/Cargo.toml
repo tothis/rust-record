@@ -1,0 +1,5 @@
+[package]
+name = "grep"
+version = "0.1.0"
+authors = ["李磊 <this.lilei@gmail.com>"]
+edition = "2018"
