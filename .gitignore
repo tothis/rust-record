@@ -2,8 +2,5 @@
 */target
 */Cargo.lock
 
-# wasm-pack
-*/node_modules
-*/pkg
+# Yew
 */dist
-*/yarn.lock

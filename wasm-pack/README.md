@@ -1,1 +1,0 @@
-项目根目录运行`wasm-pack build`命令 即可编译出WASM模块 wasm-pack会在项目的pkg目录下生成`.wasm`等文件
