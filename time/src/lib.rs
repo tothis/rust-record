@@ -8,7 +8,7 @@ pub fn parse_time(mut args: Args) {
     let date = match args.next() {
         Some(arg) => {
             match arg.parse::<i64>() {
-                // 可以转为i64 则为时间戳
+                // 可以转为 i64 则为时间戳
                 Ok(arg_value) => Local.timestamp_millis(arg_value).format(FORMAT).to_string(),
                 Err(_) => {
                     match Local.datetime_from_str(&arg, FORMAT) {

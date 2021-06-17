@@ -1,0 +1,3 @@
+path = "/CLionProjects/rust-record"
+exclude_prefix = [".idea", ".git"]
+exclude_suffix = ["lock", "exe"]

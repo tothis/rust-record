@@ -1,10 +1,10 @@
 [package]
-name = "rocket-record"
+name = "file-append-newline"
 version = "0.1.0"
-authors = ["李磊 <this.lilei@gmail.com>"]
+authors = ["Li Lei <this.lilei@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+toml = "0.5"
 serde = { version = "1.0", features = ["derive"] }
-rocket = "0.4"
-rocket_contrib = "0.4"
+once_cell = "1.8"
