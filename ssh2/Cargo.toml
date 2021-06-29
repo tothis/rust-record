@@ -1,0 +1,7 @@
+[package]
+name = "ssh2-record"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+ssh2 = "0.9"

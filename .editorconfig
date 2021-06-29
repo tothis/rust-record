@@ -1,12 +1,13 @@
 root = true
 
 [*]
-charset = utf-8
-# UNIX换行符
 end_of_line = lf
-
-[*.rs]
-# 缩进风格 space tab
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
 indent_style = space
-# 缩进的空格数
 indent_size = 4
+
+[*.md]
+# 行尾双空格表示 Markdown 中的换行符
+trim_trailing_whitespace = false
